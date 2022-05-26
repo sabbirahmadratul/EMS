@@ -31,7 +31,7 @@ namespace EMS
         try
         {
           Con.Open();
-          string query = "insert into EmployeeTable values('" + empIdTextBox.Text + "', '" + empNameTextBox.Text + "', '" + empAddressTextBox.Text + "', '" + empPosComboBox.SelectedItem.ToString() + "', '" + empDOBPicker.Value.Date + "', '" + empPhoneTextBox.Text + "', '" + empEduComboBox.SelectedItem.ToString() + "', '" + empGenComboBox.SelectedItem.ToString() + "');";
+          string query = "insert into EmployeeTable values('" + empIdTextBox.Text + "', '" + empNameTextBox.Text + "', '" + empAddressTextBox.Text + "', '" + empPosComboBox.SelectedItem.ToString() + "', '" + empDOBPicker.Value.ToShortDateString() + "', '" + empPhoneTextBox.Text + "', '" + empEduComboBox.SelectedItem.ToString() + "', '" + empGenComboBox.SelectedItem.ToString() + "');";
 
           SqlCommand cmd = new SqlCommand(query, Con);
           cmd.ExecuteNonQuery();
@@ -43,6 +43,7 @@ namespace EMS
         catch(Exception ex)
         {
           MessageBox.Show(ex.Message);
+          Con.Close();
         }
       }
     }
@@ -68,6 +69,53 @@ namespace EMS
     private void Employee_Load(object sender, EventArgs e)
     {
       populate();
+      empPosComboBox.Text = "-----select-----";
+      empEduComboBox.Text = "-----select-----";
+      empGenComboBox.Text = "-----select-----";
+      empDOBPicker.Text = "Tuesday, June 28, 1994";
+
+    }
+
+    private void deleteButton_Click(object sender, EventArgs e)
+    {
+      if (empIdTextBox.Text == "")
+      {
+        MessageBox.Show("Please enter Employee ID.");
+      }
+      else
+      {
+        try
+        {
+          Con.Open();
+          string query = "delete from EmployeeTable where empId = '" + empIdTextBox.Text + "';";
+
+          SqlCommand cmd = new SqlCommand(query, Con);
+          cmd.ExecuteNonQuery();
+          MessageBox.Show("Employee deleted succesfully.");
+
+          Con.Close();
+          populate();
+          empIdTextBox.Text = "";
+
+        }
+        catch (Exception ex)
+        {
+          MessageBox.Show(ex.Message);
+          Con.Close();
+        }
+      }
+    }
+
+    private void empDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+    {
+      empIdTextBox.Text = empDGV.SelectedRows[0].Cells[0].Value.ToString();
+      empNameTextBox.Text = empDGV.SelectedRows[0].Cells[1].Value.ToString();
+      empAddressTextBox.Text = empDGV.SelectedRows[0].Cells[2].Value.ToString();
+      empPosComboBox.SelectedItem = empDGV.SelectedRows[0].Cells[3].Value.ToString();
+      empPhoneTextBox.Text = empDGV.SelectedRows[0].Cells[5].Value.ToString();
+      empEduComboBox.SelectedItem = empDGV.SelectedRows[0].Cells[6].Value.ToString();
+      empGenComboBox.SelectedItem = empDGV.SelectedRows[0].Cells[7].Value.ToString();
+
     }
   }
 }

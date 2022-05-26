@@ -29,9 +29,10 @@
     private void InitializeComponent()
     {
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employee));
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
       this.label1 = new System.Windows.Forms.Label();
       this.panel1 = new System.Windows.Forms.Panel();
       this.empDOBPicker = new System.Windows.Forms.DateTimePicker();
@@ -100,6 +101,7 @@
       this.panel1.Controls.Add(this.empNameTextBox);
       this.panel1.Controls.Add(this.empId);
       this.panel1.Controls.Add(this.empIdTextBox);
+      this.panel1.ForeColor = System.Drawing.Color.White;
       this.panel1.Location = new System.Drawing.Point(1, 74);
       this.panel1.Name = "panel1";
       this.panel1.Size = new System.Drawing.Size(1206, 438);
@@ -107,9 +109,10 @@
       // 
       // empDOBPicker
       // 
-      this.empDOBPicker.Location = new System.Drawing.Point(227, 207);
+      this.empDOBPicker.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold);
+      this.empDOBPicker.Location = new System.Drawing.Point(211, 201);
       this.empDOBPicker.Name = "empDOBPicker";
-      this.empDOBPicker.Size = new System.Drawing.Size(127, 20);
+      this.empDOBPicker.Size = new System.Drawing.Size(187, 40);
       this.empDOBPicker.TabIndex = 25;
       this.empDOBPicker.Value = new System.DateTime(2022, 5, 26, 0, 0, 0, 0);
       // 
@@ -134,6 +137,7 @@
       this.deleteButton.TabIndex = 23;
       this.deleteButton.Text = "Delete";
       this.deleteButton.UseVisualStyleBackColor = false;
+      this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
       // 
       // editButton
       // 
@@ -160,7 +164,10 @@
       // 
       // empEduComboBox
       // 
+      this.empEduComboBox.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold);
+      this.empEduComboBox.ForeColor = System.Drawing.Color.Black;
       this.empEduComboBox.FormattingEnabled = true;
+      this.empEduComboBox.ItemHeight = 30;
       this.empEduComboBox.Items.AddRange(new object[] {
             "BBA",
             "BTech",
@@ -170,35 +177,37 @@
             "MTech",
             "MScEngg",
             "MCom"});
-      this.empEduComboBox.Location = new System.Drawing.Point(233, 281);
+      this.empEduComboBox.Location = new System.Drawing.Point(211, 273);
       this.empEduComboBox.Name = "empEduComboBox";
-      this.empEduComboBox.Size = new System.Drawing.Size(121, 21);
+      this.empEduComboBox.Size = new System.Drawing.Size(181, 38);
       this.empEduComboBox.TabIndex = 20;
       // 
       // empPosComboBox
       // 
+      this.empPosComboBox.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold);
+      this.empPosComboBox.ForeColor = System.Drawing.Color.DimGray;
       this.empPosComboBox.FormattingEnabled = true;
       this.empPosComboBox.Items.AddRange(new object[] {
             "Administrator",
             "Senior Developer",
             "Junior Developer",
             "Receiptionist"});
-      this.empPosComboBox.Location = new System.Drawing.Point(24, 206);
-      this.empPosComboBox.MaximumSize = new System.Drawing.Size(125, 0);
-      this.empPosComboBox.MinimumSize = new System.Drawing.Size(125, 0);
+      this.empPosComboBox.Location = new System.Drawing.Point(24, 205);
       this.empPosComboBox.Name = "empPosComboBox";
-      this.empPosComboBox.Size = new System.Drawing.Size(125, 21);
+      this.empPosComboBox.Size = new System.Drawing.Size(157, 38);
       this.empPosComboBox.TabIndex = 19;
       // 
       // empGenComboBox
       // 
+      this.empGenComboBox.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold);
+      this.empGenComboBox.ForeColor = System.Drawing.Color.Black;
       this.empGenComboBox.FormattingEnabled = true;
       this.empGenComboBox.Items.AddRange(new object[] {
             "Male",
             "Female"});
-      this.empGenComboBox.Location = new System.Drawing.Point(227, 138);
+      this.empGenComboBox.Location = new System.Drawing.Point(211, 131);
       this.empGenComboBox.Name = "empGenComboBox";
-      this.empGenComboBox.Size = new System.Drawing.Size(121, 21);
+      this.empGenComboBox.Size = new System.Drawing.Size(187, 38);
       this.empGenComboBox.TabIndex = 18;
       // 
       // empEdu
@@ -207,7 +216,7 @@
       this.empEdu.BackColor = System.Drawing.Color.White;
       this.empEdu.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.empEdu.ForeColor = System.Drawing.Color.OrangeRed;
-      this.empEdu.Location = new System.Drawing.Point(227, 246);
+      this.empEdu.Location = new System.Drawing.Point(222, 246);
       this.empEdu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.empEdu.Name = "empEdu";
       this.empEdu.Size = new System.Drawing.Size(99, 32);
@@ -221,7 +230,7 @@
       this.empPhone.BackColor = System.Drawing.Color.White;
       this.empPhone.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.empPhone.ForeColor = System.Drawing.Color.OrangeRed;
-      this.empPhone.Location = new System.Drawing.Point(18, 246);
+      this.empPhone.Location = new System.Drawing.Point(67, 246);
       this.empPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.empPhone.Name = "empPhone";
       this.empPhone.Size = new System.Drawing.Size(68, 32);
@@ -239,16 +248,17 @@
       this.empPhoneTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
       this.empPhoneTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
       this.empPhoneTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-      this.empPhoneTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+      this.empPhoneTextBox.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold);
+      this.empPhoneTextBox.ForeColor = System.Drawing.Color.Black;
       this.empPhoneTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-      this.empPhoneTextBox.Location = new System.Drawing.Point(24, 263);
+      this.empPhoneTextBox.Location = new System.Drawing.Point(24, 273);
       this.empPhoneTextBox.Margin = new System.Windows.Forms.Padding(4);
       this.empPhoneTextBox.Name = "empPhoneTextBox";
       this.empPhoneTextBox.PasswordChar = '\0';
       this.empPhoneTextBox.PlaceholderText = "";
       this.empPhoneTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
       this.empPhoneTextBox.SelectedText = "";
-      this.empPhoneTextBox.Size = new System.Drawing.Size(157, 38);
+      this.empPhoneTextBox.Size = new System.Drawing.Size(144, 38);
       this.empPhoneTextBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
       this.empPhoneTextBox.TabIndex = 15;
       // 
@@ -258,7 +268,7 @@
       this.empDOB.BackColor = System.Drawing.Color.White;
       this.empDOB.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.empDOB.ForeColor = System.Drawing.Color.OrangeRed;
-      this.empDOB.Location = new System.Drawing.Point(227, 172);
+      this.empDOB.Location = new System.Drawing.Point(235, 172);
       this.empDOB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.empDOB.Name = "empDOB";
       this.empDOB.Size = new System.Drawing.Size(124, 32);
@@ -272,7 +282,7 @@
       this.empPosition.BackColor = System.Drawing.Color.White;
       this.empPosition.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.empPosition.ForeColor = System.Drawing.Color.OrangeRed;
-      this.empPosition.Location = new System.Drawing.Point(18, 172);
+      this.empPosition.Location = new System.Drawing.Point(57, 172);
       this.empPosition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.empPosition.Name = "empPosition";
       this.empPosition.Size = new System.Drawing.Size(83, 32);
@@ -286,7 +296,7 @@
       this.empGender.BackColor = System.Drawing.Color.White;
       this.empGender.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.empGender.ForeColor = System.Drawing.Color.OrangeRed;
-      this.empGender.Location = new System.Drawing.Point(227, 104);
+      this.empGender.Location = new System.Drawing.Point(256, 104);
       this.empGender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.empGender.Name = "empGender";
       this.empGender.Size = new System.Drawing.Size(76, 32);
@@ -300,7 +310,7 @@
       this.empAddress.BackColor = System.Drawing.Color.White;
       this.empAddress.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.empAddress.ForeColor = System.Drawing.Color.OrangeRed;
-      this.empAddress.Location = new System.Drawing.Point(18, 104);
+      this.empAddress.Location = new System.Drawing.Point(62, 104);
       this.empAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.empAddress.Name = "empAddress";
       this.empAddress.Size = new System.Drawing.Size(82, 32);
@@ -318,9 +328,10 @@
       this.empAddressTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
       this.empAddressTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
       this.empAddressTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-      this.empAddressTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+      this.empAddressTextBox.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold);
+      this.empAddressTextBox.ForeColor = System.Drawing.Color.Black;
       this.empAddressTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-      this.empAddressTextBox.Location = new System.Drawing.Point(24, 121);
+      this.empAddressTextBox.Location = new System.Drawing.Point(24, 131);
       this.empAddressTextBox.Margin = new System.Windows.Forms.Padding(4);
       this.empAddressTextBox.Name = "empAddressTextBox";
       this.empAddressTextBox.PasswordChar = '\0';
@@ -355,16 +366,17 @@
       this.empNameTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
       this.empNameTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
       this.empNameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-      this.empNameTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+      this.empNameTextBox.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold);
+      this.empNameTextBox.ForeColor = System.Drawing.Color.Black;
       this.empNameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-      this.empNameTextBox.Location = new System.Drawing.Point(233, 45);
+      this.empNameTextBox.Location = new System.Drawing.Point(211, 55);
       this.empNameTextBox.Margin = new System.Windows.Forms.Padding(4);
       this.empNameTextBox.Name = "empNameTextBox";
       this.empNameTextBox.PasswordChar = '\0';
       this.empNameTextBox.PlaceholderText = "";
       this.empNameTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
       this.empNameTextBox.SelectedText = "";
-      this.empNameTextBox.Size = new System.Drawing.Size(157, 38);
+      this.empNameTextBox.Size = new System.Drawing.Size(181, 38);
       this.empNameTextBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
       this.empNameTextBox.TabIndex = 4;
       // 
@@ -374,7 +386,7 @@
       this.empId.BackColor = System.Drawing.Color.White;
       this.empId.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.empId.ForeColor = System.Drawing.Color.OrangeRed;
-      this.empId.Location = new System.Drawing.Point(18, 28);
+      this.empId.Location = new System.Drawing.Point(47, 28);
       this.empId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.empId.Name = "empId";
       this.empId.Size = new System.Drawing.Size(121, 32);
@@ -392,9 +404,10 @@
       this.empIdTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
       this.empIdTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
       this.empIdTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-      this.empIdTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+      this.empIdTextBox.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold);
+      this.empIdTextBox.ForeColor = System.Drawing.Color.Black;
       this.empIdTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-      this.empIdTextBox.Location = new System.Drawing.Point(24, 45);
+      this.empIdTextBox.Location = new System.Drawing.Point(24, 56);
       this.empIdTextBox.Margin = new System.Windows.Forms.Padding(4);
       this.empIdTextBox.Name = "empIdTextBox";
       this.empIdTextBox.PasswordChar = '\0';
@@ -432,59 +445,74 @@
       // 
       // empDGV
       // 
-      dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-      this.empDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+      this.empDGV.AllowUserToResizeRows = false;
+      dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+      dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
+      dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.OrangeRed;
+      dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
+      this.empDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
       this.empDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
       this.empDGV.BackgroundColor = System.Drawing.Color.White;
       this.empDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-      this.empDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+      this.empDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
       this.empDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-      dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-      dataGridViewCellStyle2.BackColor = System.Drawing.Color.OrangeRed;
-      dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-      dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-      dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-      dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-      this.empDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+      dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+      dataGridViewCellStyle10.BackColor = System.Drawing.Color.OrangeRed;
+      dataGridViewCellStyle10.Font = new System.Drawing.Font("Perpetua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+      dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.OrangeRed;
+      dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+      dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+      this.empDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
       this.empDGV.ColumnHeadersHeight = 25;
-      dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-      dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-      dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-      dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.OrangeRed;
-      dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-      dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-      this.empDGV.DefaultCellStyle = dataGridViewCellStyle3;
+      dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+      dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+      dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+      dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+      dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.OrangeRed;
+      dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
+      dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+      this.empDGV.DefaultCellStyle = dataGridViewCellStyle11;
       this.empDGV.EnableHeadersVisualStyles = false;
-      this.empDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-      this.empDGV.Location = new System.Drawing.Point(423, 28);
+      this.empDGV.GridColor = System.Drawing.Color.White;
+      this.empDGV.Location = new System.Drawing.Point(416, 28);
       this.empDGV.Name = "empDGV";
+      this.empDGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+      dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+      dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+      dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+      dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.White;
+      dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+      dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+      this.empDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
       this.empDGV.RowHeadersVisible = false;
       this.empDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-      this.empDGV.Size = new System.Drawing.Size(755, 388);
+      this.empDGV.Size = new System.Drawing.Size(752, 392);
       this.empDGV.TabIndex = 26;
       this.empDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-      this.empDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
-      this.empDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-      this.empDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-      this.empDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+      this.empDGV.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.empDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
+      this.empDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.OrangeRed;
+      this.empDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.White;
       this.empDGV.ThemeStyle.BackColor = System.Drawing.Color.White;
-      this.empDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+      this.empDGV.ThemeStyle.GridColor = System.Drawing.Color.White;
       this.empDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.OrangeRed;
       this.empDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-      this.empDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.empDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Perpetua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.empDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
       this.empDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
       this.empDGV.ThemeStyle.HeaderStyle.Height = 25;
       this.empDGV.ThemeStyle.ReadOnly = false;
       this.empDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
       this.empDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-      this.empDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.empDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
       this.empDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
       this.empDGV.ThemeStyle.RowsStyle.Height = 22;
-      this.empDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.White;
-      this.empDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.OrangeRed;
+      this.empDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.OrangeRed;
+      this.empDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+      this.empDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.empDGV_CellContentClick);
       // 
       // Employee
       // 
