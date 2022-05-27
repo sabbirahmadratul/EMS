@@ -99,7 +99,7 @@
       this.salaryLabel.BackColor = System.Drawing.Color.OrangeRed;
       this.salaryLabel.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.salaryLabel.ForeColor = System.Drawing.Color.White;
-      this.salaryLabel.Location = new System.Drawing.Point(82, 32);
+      this.salaryLabel.Location = new System.Drawing.Point(84, 22);
       this.salaryLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.salaryLabel.Name = "salaryLabel";
       this.salaryLabel.Size = new System.Drawing.Size(88, 43);
@@ -110,7 +110,7 @@
       // pictureBox1
       // 
       this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-      this.pictureBox1.Location = new System.Drawing.Point(12, 13);
+      this.pictureBox1.Location = new System.Drawing.Point(12, 11);
       this.pictureBox1.Name = "pictureBox1";
       this.pictureBox1.Size = new System.Drawing.Size(63, 62);
       this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -123,7 +123,7 @@
       this.exitButton.BackColor = System.Drawing.Color.OrangeRed;
       this.exitButton.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.exitButton.ForeColor = System.Drawing.Color.White;
-      this.exitButton.Location = new System.Drawing.Point(752, 13);
+      this.exitButton.Location = new System.Drawing.Point(753, 13);
       this.exitButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.exitButton.Name = "exitButton";
       this.exitButton.Size = new System.Drawing.Size(35, 43);

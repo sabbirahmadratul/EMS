@@ -76,7 +76,7 @@
       // viewEmpPictureBox
       // 
       this.viewEmpPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("viewEmpPictureBox.Image")));
-      this.viewEmpPictureBox.Location = new System.Drawing.Point(12, 15);
+      this.viewEmpPictureBox.Location = new System.Drawing.Point(12, 16);
       this.viewEmpPictureBox.Name = "viewEmpPictureBox";
       this.viewEmpPictureBox.Size = new System.Drawing.Size(63, 56);
       this.viewEmpPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -89,7 +89,7 @@
       this.viewEmpLabel.BackColor = System.Drawing.Color.OrangeRed;
       this.viewEmpLabel.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.viewEmpLabel.ForeColor = System.Drawing.Color.White;
-      this.viewEmpLabel.Location = new System.Drawing.Point(70, 25);
+      this.viewEmpLabel.Location = new System.Drawing.Point(70, 24);
       this.viewEmpLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.viewEmpLabel.Name = "viewEmpLabel";
       this.viewEmpLabel.Size = new System.Drawing.Size(192, 43);

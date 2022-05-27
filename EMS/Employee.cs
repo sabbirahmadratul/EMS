@@ -35,7 +35,7 @@ namespace EMS
 
           SqlCommand cmd = new SqlCommand(query, Con);
           cmd.ExecuteNonQuery();
-          MessageBox.Show("Employee Added Succesfully.");
+          MessageBox.Show("Record Has Been Added Succesfully.");
 
           Con.Close();
           populate();
@@ -120,7 +120,7 @@ namespace EMS
 
     private void editButton_Click(object sender, EventArgs e)
     {
-      if (empIdTextBox.Text == "" || empNameTextBox.Text == "" || empAddressTextBox.Text == "" || empPhoneTextBox.Text == "")
+      if (empNameTextBox.Text == "" || empAddressTextBox.Text == "" || empPhoneTextBox.Text == "")
       {
         MessageBox.Show("Missing Information.");
       }
@@ -129,7 +129,7 @@ namespace EMS
         try
         {
           Con.Open();
-          string query = "update EmployeeTable set empId='" + empIdTextBox.Text + "', empName='" + empNameTextBox.Text + "', empAdd='" + empAddressTextBox.Text + "', empPos='" + empPosComboBox.SelectedItem.ToString() + "', empDOB='" + empDOBPicker.Value.ToShortDateString() + "', empPhone='" + empPhoneTextBox.Text + "', empEdu='" + empEduComboBox.SelectedItem.ToString() + "', empGen='" + empGenComboBox.SelectedItem.ToString() + "';";
+          string query = "update EmployeeTable set empName='" + empNameTextBox.Text + "', empAdd='" + empAddressTextBox.Text + "', empPos='" + empPosComboBox.SelectedItem.ToString() + "', empDOB='" + empDOBPicker.Value.ToShortDateString() + "', empPhone='" + empPhoneTextBox.Text + "', empEdu='" + empEduComboBox.SelectedItem.ToString() + "', empGen='" + empGenComboBox.SelectedItem.ToString() + "' where empId='" + empIdTextBox.Text + "';";
 
           SqlCommand cmd = new SqlCommand(query, Con);
           cmd.ExecuteNonQuery();
