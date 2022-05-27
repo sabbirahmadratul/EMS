@@ -33,28 +33,30 @@
       this.viewEmpPictureBox = new System.Windows.Forms.PictureBox();
       this.viewEmpLabel = new System.Windows.Forms.Label();
       this.panel1 = new System.Windows.Forms.Panel();
-      this.empId = new System.Windows.Forms.Label();
-      this.empName = new System.Windows.Forms.Label();
-      this.empAddress = new System.Windows.Forms.Label();
-      this.empGender = new System.Windows.Forms.Label();
-      this.empPosition = new System.Windows.Forms.Label();
-      this.empDOB = new System.Windows.Forms.Label();
-      this.empPhone = new System.Windows.Forms.Label();
-      this.empEdu = new System.Windows.Forms.Label();
-      this.printButton = new System.Windows.Forms.Button();
-      this.homeButton = new System.Windows.Forms.Button();
-      this.showEmpPhone = new System.Windows.Forms.Label();
-      this.showEmpPosition = new System.Windows.Forms.Label();
-      this.showEmpAddress = new System.Windows.Forms.Label();
-      this.showEmpId = new System.Windows.Forms.Label();
-      this.label5 = new System.Windows.Forms.Label();
-      this.refreshButton = new System.Windows.Forms.Button();
-      this.empIdTextBox = new Guna.UI2.WinForms.Guna2TextBox();
       this.showEmpEdu = new System.Windows.Forms.Label();
       this.showEmpDOB = new System.Windows.Forms.Label();
       this.showEmpGender = new System.Windows.Forms.Label();
       this.showEmpName = new System.Windows.Forms.Label();
+      this.empIdTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+      this.refreshButton = new System.Windows.Forms.Button();
+      this.label5 = new System.Windows.Forms.Label();
+      this.showEmpPhone = new System.Windows.Forms.Label();
+      this.showEmpPosition = new System.Windows.Forms.Label();
+      this.showEmpAddress = new System.Windows.Forms.Label();
+      this.showEmpId = new System.Windows.Forms.Label();
+      this.homeButton = new System.Windows.Forms.Button();
+      this.printButton = new System.Windows.Forms.Button();
+      this.empEdu = new System.Windows.Forms.Label();
+      this.empPhone = new System.Windows.Forms.Label();
+      this.empDOB = new System.Windows.Forms.Label();
+      this.empPosition = new System.Windows.Forms.Label();
+      this.empGender = new System.Windows.Forms.Label();
+      this.empAddress = new System.Windows.Forms.Label();
+      this.empName = new System.Windows.Forms.Label();
+      this.empId = new System.Windows.Forms.Label();
       this.exitButtonLabel = new System.Windows.Forms.Label();
+      this.label3 = new System.Windows.Forms.Label();
+      this.label2 = new System.Windows.Forms.Label();
       ((System.ComponentModel.ISupportInitialize)(this.viewEmpPictureBox)).BeginInit();
       this.panel1.SuspendLayout();
       this.SuspendLayout();
@@ -126,142 +128,108 @@
       this.panel1.Size = new System.Drawing.Size(1216, 411);
       this.panel1.TabIndex = 32;
       // 
-      // empId
+      // showEmpEdu
       // 
-      this.empId.AutoSize = true;
-      this.empId.BackColor = System.Drawing.Color.White;
-      this.empId.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.empId.ForeColor = System.Drawing.Color.OrangeRed;
-      this.empId.Location = new System.Drawing.Point(118, 102);
-      this.empId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-      this.empId.Name = "empId";
-      this.empId.Size = new System.Drawing.Size(126, 32);
-      this.empId.TabIndex = 55;
-      this.empId.Text = "Employee ID:";
-      this.empId.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      this.showEmpEdu.AutoSize = true;
+      this.showEmpEdu.BackColor = System.Drawing.Color.White;
+      this.showEmpEdu.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.showEmpEdu.ForeColor = System.Drawing.Color.Black;
+      this.showEmpEdu.Location = new System.Drawing.Point(695, 272);
+      this.showEmpEdu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.showEmpEdu.Name = "showEmpEdu";
+      this.showEmpEdu.Size = new System.Drawing.Size(0, 32);
+      this.showEmpEdu.TabIndex = 79;
+      this.showEmpEdu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       // 
-      // empName
+      // showEmpDOB
       // 
-      this.empName.AutoSize = true;
-      this.empName.BackColor = System.Drawing.Color.White;
-      this.empName.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.empName.ForeColor = System.Drawing.Color.OrangeRed;
-      this.empName.Location = new System.Drawing.Point(515, 102);
-      this.empName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-      this.empName.Name = "empName";
-      this.empName.Size = new System.Drawing.Size(157, 32);
-      this.empName.TabIndex = 54;
-      this.empName.Text = "Employee Name:";
-      this.empName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      this.showEmpDOB.AutoSize = true;
+      this.showEmpDOB.BackColor = System.Drawing.Color.White;
+      this.showEmpDOB.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.showEmpDOB.ForeColor = System.Drawing.Color.Black;
+      this.showEmpDOB.Location = new System.Drawing.Point(694, 210);
+      this.showEmpDOB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.showEmpDOB.Name = "showEmpDOB";
+      this.showEmpDOB.Size = new System.Drawing.Size(0, 32);
+      this.showEmpDOB.TabIndex = 78;
+      this.showEmpDOB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       // 
-      // empAddress
+      // showEmpGender
       // 
-      this.empAddress.AutoSize = true;
-      this.empAddress.BackColor = System.Drawing.Color.White;
-      this.empAddress.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.empAddress.ForeColor = System.Drawing.Color.OrangeRed;
-      this.empAddress.Location = new System.Drawing.Point(157, 156);
-      this.empAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-      this.empAddress.Name = "empAddress";
-      this.empAddress.Size = new System.Drawing.Size(87, 32);
-      this.empAddress.TabIndex = 58;
-      this.empAddress.Text = "Address:";
-      this.empAddress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      this.showEmpGender.AutoSize = true;
+      this.showEmpGender.BackColor = System.Drawing.Color.White;
+      this.showEmpGender.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.showEmpGender.ForeColor = System.Drawing.Color.Black;
+      this.showEmpGender.Location = new System.Drawing.Point(695, 156);
+      this.showEmpGender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.showEmpGender.Name = "showEmpGender";
+      this.showEmpGender.Size = new System.Drawing.Size(0, 32);
+      this.showEmpGender.TabIndex = 77;
+      this.showEmpGender.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       // 
-      // empGender
+      // showEmpName
       // 
-      this.empGender.AutoSize = true;
-      this.empGender.BackColor = System.Drawing.Color.White;
-      this.empGender.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.empGender.ForeColor = System.Drawing.Color.OrangeRed;
-      this.empGender.Location = new System.Drawing.Point(591, 156);
-      this.empGender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-      this.empGender.Name = "empGender";
-      this.empGender.Size = new System.Drawing.Size(81, 32);
-      this.empGender.TabIndex = 57;
-      this.empGender.Text = "Gender:";
-      this.empGender.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      this.showEmpName.AutoSize = true;
+      this.showEmpName.BackColor = System.Drawing.Color.White;
+      this.showEmpName.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.showEmpName.ForeColor = System.Drawing.Color.Black;
+      this.showEmpName.Location = new System.Drawing.Point(695, 102);
+      this.showEmpName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.showEmpName.Name = "showEmpName";
+      this.showEmpName.Size = new System.Drawing.Size(0, 32);
+      this.showEmpName.TabIndex = 76;
+      this.showEmpName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       // 
-      // empPosition
+      // empIdTextBox
       // 
-      this.empPosition.AutoSize = true;
-      this.empPosition.BackColor = System.Drawing.Color.White;
-      this.empPosition.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.empPosition.ForeColor = System.Drawing.Color.OrangeRed;
-      this.empPosition.Location = new System.Drawing.Point(156, 210);
-      this.empPosition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-      this.empPosition.Name = "empPosition";
-      this.empPosition.Size = new System.Drawing.Size(88, 32);
-      this.empPosition.TabIndex = 60;
-      this.empPosition.Text = "Position:";
-      this.empPosition.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      this.empIdTextBox.BackColor = System.Drawing.Color.Snow;
+      this.empIdTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+      this.empIdTextBox.DefaultText = "";
+      this.empIdTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+      this.empIdTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+      this.empIdTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+      this.empIdTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+      this.empIdTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+      this.empIdTextBox.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold);
+      this.empIdTextBox.ForeColor = System.Drawing.Color.Black;
+      this.empIdTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+      this.empIdTextBox.Location = new System.Drawing.Point(373, 19);
+      this.empIdTextBox.Margin = new System.Windows.Forms.Padding(4);
+      this.empIdTextBox.Name = "empIdTextBox";
+      this.empIdTextBox.PasswordChar = '\0';
+      this.empIdTextBox.PlaceholderText = "";
+      this.empIdTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+      this.empIdTextBox.SelectedText = "";
+      this.empIdTextBox.Size = new System.Drawing.Size(157, 38);
+      this.empIdTextBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+      this.empIdTextBox.TabIndex = 75;
       // 
-      // empDOB
+      // refreshButton
       // 
-      this.empDOB.AutoSize = true;
-      this.empDOB.BackColor = System.Drawing.Color.White;
-      this.empDOB.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.empDOB.ForeColor = System.Drawing.Color.OrangeRed;
-      this.empDOB.Location = new System.Drawing.Point(543, 210);
-      this.empDOB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-      this.empDOB.Name = "empDOB";
-      this.empDOB.Size = new System.Drawing.Size(129, 32);
-      this.empDOB.TabIndex = 59;
-      this.empDOB.Text = "Date of Birth:";
-      this.empDOB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      this.refreshButton.BackColor = System.Drawing.Color.OrangeRed;
+      this.refreshButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.refreshButton.ForeColor = System.Drawing.Color.White;
+      this.refreshButton.Location = new System.Drawing.Point(545, 14);
+      this.refreshButton.Name = "refreshButton";
+      this.refreshButton.Size = new System.Drawing.Size(83, 43);
+      this.refreshButton.TabIndex = 74;
+      this.refreshButton.Text = "Refresh";
+      this.refreshButton.UseVisualStyleBackColor = false;
+      this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
       // 
-      // empPhone
+      // label5
       // 
-      this.empPhone.AutoSize = true;
-      this.empPhone.BackColor = System.Drawing.Color.White;
-      this.empPhone.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.empPhone.ForeColor = System.Drawing.Color.OrangeRed;
-      this.empPhone.Location = new System.Drawing.Point(171, 272);
-      this.empPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-      this.empPhone.Name = "empPhone";
-      this.empPhone.Size = new System.Drawing.Size(73, 32);
-      this.empPhone.TabIndex = 63;
-      this.empPhone.Text = "Phone:";
-      this.empPhone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-      // 
-      // empEdu
-      // 
-      this.empEdu.AutoSize = true;
-      this.empEdu.BackColor = System.Drawing.Color.White;
-      this.empEdu.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.empEdu.ForeColor = System.Drawing.Color.OrangeRed;
-      this.empEdu.Location = new System.Drawing.Point(568, 272);
-      this.empEdu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-      this.empEdu.Name = "empEdu";
-      this.empEdu.Size = new System.Drawing.Size(104, 32);
-      this.empEdu.TabIndex = 62;
-      this.empEdu.Text = "Education:";
-      this.empEdu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-      // 
-      // printButton
-      // 
-      this.printButton.BackColor = System.Drawing.Color.OrangeRed;
-      this.printButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.printButton.ForeColor = System.Drawing.Color.White;
-      this.printButton.Location = new System.Drawing.Point(356, 346);
-      this.printButton.Name = "printButton";
-      this.printButton.Size = new System.Drawing.Size(83, 43);
-      this.printButton.TabIndex = 67;
-      this.printButton.Text = "Print";
-      this.printButton.UseVisualStyleBackColor = false;
-      // 
-      // homeButton
-      // 
-      this.homeButton.BackColor = System.Drawing.Color.OrangeRed;
-      this.homeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.homeButton.ForeColor = System.Drawing.Color.White;
-      this.homeButton.Location = new System.Drawing.Point(479, 346);
-      this.homeButton.Name = "homeButton";
-      this.homeButton.Size = new System.Drawing.Size(84, 43);
-      this.homeButton.TabIndex = 68;
-      this.homeButton.Text = "Home";
-      this.homeButton.UseVisualStyleBackColor = false;
-      this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
+      this.label5.AutoSize = true;
+      this.label5.BackColor = System.Drawing.Color.White;
+      this.label5.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label5.ForeColor = System.Drawing.Color.OrangeRed;
+      this.label5.Location = new System.Drawing.Point(242, 25);
+      this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.label5.Name = "label5";
+      this.label5.Size = new System.Drawing.Size(126, 32);
+      this.label5.TabIndex = 73;
+      this.label5.Text = "Employee ID:";
+      this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       // 
       // showEmpPhone
       // 
@@ -315,108 +283,142 @@
       this.showEmpId.TabIndex = 69;
       this.showEmpId.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       // 
-      // label5
+      // homeButton
       // 
-      this.label5.AutoSize = true;
-      this.label5.BackColor = System.Drawing.Color.White;
-      this.label5.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label5.ForeColor = System.Drawing.Color.OrangeRed;
-      this.label5.Location = new System.Drawing.Point(242, 25);
-      this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-      this.label5.Name = "label5";
-      this.label5.Size = new System.Drawing.Size(126, 32);
-      this.label5.TabIndex = 73;
-      this.label5.Text = "Employee ID:";
-      this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      this.homeButton.BackColor = System.Drawing.Color.OrangeRed;
+      this.homeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.homeButton.ForeColor = System.Drawing.Color.White;
+      this.homeButton.Location = new System.Drawing.Point(479, 346);
+      this.homeButton.Name = "homeButton";
+      this.homeButton.Size = new System.Drawing.Size(84, 43);
+      this.homeButton.TabIndex = 68;
+      this.homeButton.Text = "Home";
+      this.homeButton.UseVisualStyleBackColor = false;
+      this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
       // 
-      // refreshButton
+      // printButton
       // 
-      this.refreshButton.BackColor = System.Drawing.Color.OrangeRed;
-      this.refreshButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.refreshButton.ForeColor = System.Drawing.Color.White;
-      this.refreshButton.Location = new System.Drawing.Point(545, 14);
-      this.refreshButton.Name = "refreshButton";
-      this.refreshButton.Size = new System.Drawing.Size(83, 43);
-      this.refreshButton.TabIndex = 74;
-      this.refreshButton.Text = "Refresh";
-      this.refreshButton.UseVisualStyleBackColor = false;
-      this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
+      this.printButton.BackColor = System.Drawing.Color.OrangeRed;
+      this.printButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.printButton.ForeColor = System.Drawing.Color.White;
+      this.printButton.Location = new System.Drawing.Point(356, 346);
+      this.printButton.Name = "printButton";
+      this.printButton.Size = new System.Drawing.Size(83, 43);
+      this.printButton.TabIndex = 67;
+      this.printButton.Text = "Print";
+      this.printButton.UseVisualStyleBackColor = false;
       // 
-      // empIdTextBox
+      // empEdu
       // 
-      this.empIdTextBox.BackColor = System.Drawing.Color.Snow;
-      this.empIdTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-      this.empIdTextBox.DefaultText = "";
-      this.empIdTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-      this.empIdTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-      this.empIdTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-      this.empIdTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-      this.empIdTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-      this.empIdTextBox.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold);
-      this.empIdTextBox.ForeColor = System.Drawing.Color.Black;
-      this.empIdTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-      this.empIdTextBox.Location = new System.Drawing.Point(373, 19);
-      this.empIdTextBox.Margin = new System.Windows.Forms.Padding(4);
-      this.empIdTextBox.Name = "empIdTextBox";
-      this.empIdTextBox.PasswordChar = '\0';
-      this.empIdTextBox.PlaceholderText = "";
-      this.empIdTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-      this.empIdTextBox.SelectedText = "";
-      this.empIdTextBox.Size = new System.Drawing.Size(157, 38);
-      this.empIdTextBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-      this.empIdTextBox.TabIndex = 75;
+      this.empEdu.AutoSize = true;
+      this.empEdu.BackColor = System.Drawing.Color.White;
+      this.empEdu.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.empEdu.ForeColor = System.Drawing.Color.OrangeRed;
+      this.empEdu.Location = new System.Drawing.Point(568, 272);
+      this.empEdu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.empEdu.Name = "empEdu";
+      this.empEdu.Size = new System.Drawing.Size(104, 32);
+      this.empEdu.TabIndex = 62;
+      this.empEdu.Text = "Education:";
+      this.empEdu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       // 
-      // showEmpEdu
+      // empPhone
       // 
-      this.showEmpEdu.AutoSize = true;
-      this.showEmpEdu.BackColor = System.Drawing.Color.White;
-      this.showEmpEdu.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.showEmpEdu.ForeColor = System.Drawing.Color.Black;
-      this.showEmpEdu.Location = new System.Drawing.Point(695, 272);
-      this.showEmpEdu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-      this.showEmpEdu.Name = "showEmpEdu";
-      this.showEmpEdu.Size = new System.Drawing.Size(0, 32);
-      this.showEmpEdu.TabIndex = 79;
-      this.showEmpEdu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      this.empPhone.AutoSize = true;
+      this.empPhone.BackColor = System.Drawing.Color.White;
+      this.empPhone.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.empPhone.ForeColor = System.Drawing.Color.OrangeRed;
+      this.empPhone.Location = new System.Drawing.Point(171, 272);
+      this.empPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.empPhone.Name = "empPhone";
+      this.empPhone.Size = new System.Drawing.Size(73, 32);
+      this.empPhone.TabIndex = 63;
+      this.empPhone.Text = "Phone:";
+      this.empPhone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       // 
-      // showEmpDOB
+      // empDOB
       // 
-      this.showEmpDOB.AutoSize = true;
-      this.showEmpDOB.BackColor = System.Drawing.Color.White;
-      this.showEmpDOB.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.showEmpDOB.ForeColor = System.Drawing.Color.Black;
-      this.showEmpDOB.Location = new System.Drawing.Point(694, 210);
-      this.showEmpDOB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-      this.showEmpDOB.Name = "showEmpDOB";
-      this.showEmpDOB.Size = new System.Drawing.Size(0, 32);
-      this.showEmpDOB.TabIndex = 78;
-      this.showEmpDOB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      this.empDOB.AutoSize = true;
+      this.empDOB.BackColor = System.Drawing.Color.White;
+      this.empDOB.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.empDOB.ForeColor = System.Drawing.Color.OrangeRed;
+      this.empDOB.Location = new System.Drawing.Point(543, 210);
+      this.empDOB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.empDOB.Name = "empDOB";
+      this.empDOB.Size = new System.Drawing.Size(129, 32);
+      this.empDOB.TabIndex = 59;
+      this.empDOB.Text = "Date of Birth:";
+      this.empDOB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       // 
-      // showEmpGender
+      // empPosition
       // 
-      this.showEmpGender.AutoSize = true;
-      this.showEmpGender.BackColor = System.Drawing.Color.White;
-      this.showEmpGender.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.showEmpGender.ForeColor = System.Drawing.Color.Black;
-      this.showEmpGender.Location = new System.Drawing.Point(695, 156);
-      this.showEmpGender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-      this.showEmpGender.Name = "showEmpGender";
-      this.showEmpGender.Size = new System.Drawing.Size(0, 32);
-      this.showEmpGender.TabIndex = 77;
-      this.showEmpGender.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      this.empPosition.AutoSize = true;
+      this.empPosition.BackColor = System.Drawing.Color.White;
+      this.empPosition.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.empPosition.ForeColor = System.Drawing.Color.OrangeRed;
+      this.empPosition.Location = new System.Drawing.Point(156, 210);
+      this.empPosition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.empPosition.Name = "empPosition";
+      this.empPosition.Size = new System.Drawing.Size(88, 32);
+      this.empPosition.TabIndex = 60;
+      this.empPosition.Text = "Position:";
+      this.empPosition.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       // 
-      // showEmpName
+      // empGender
       // 
-      this.showEmpName.AutoSize = true;
-      this.showEmpName.BackColor = System.Drawing.Color.White;
-      this.showEmpName.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.showEmpName.ForeColor = System.Drawing.Color.Black;
-      this.showEmpName.Location = new System.Drawing.Point(695, 102);
-      this.showEmpName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-      this.showEmpName.Name = "showEmpName";
-      this.showEmpName.Size = new System.Drawing.Size(0, 32);
-      this.showEmpName.TabIndex = 76;
-      this.showEmpName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      this.empGender.AutoSize = true;
+      this.empGender.BackColor = System.Drawing.Color.White;
+      this.empGender.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.empGender.ForeColor = System.Drawing.Color.OrangeRed;
+      this.empGender.Location = new System.Drawing.Point(591, 156);
+      this.empGender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.empGender.Name = "empGender";
+      this.empGender.Size = new System.Drawing.Size(81, 32);
+      this.empGender.TabIndex = 57;
+      this.empGender.Text = "Gender:";
+      this.empGender.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      // 
+      // empAddress
+      // 
+      this.empAddress.AutoSize = true;
+      this.empAddress.BackColor = System.Drawing.Color.White;
+      this.empAddress.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.empAddress.ForeColor = System.Drawing.Color.OrangeRed;
+      this.empAddress.Location = new System.Drawing.Point(157, 156);
+      this.empAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.empAddress.Name = "empAddress";
+      this.empAddress.Size = new System.Drawing.Size(87, 32);
+      this.empAddress.TabIndex = 58;
+      this.empAddress.Text = "Address:";
+      this.empAddress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      // 
+      // empName
+      // 
+      this.empName.AutoSize = true;
+      this.empName.BackColor = System.Drawing.Color.White;
+      this.empName.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.empName.ForeColor = System.Drawing.Color.OrangeRed;
+      this.empName.Location = new System.Drawing.Point(515, 102);
+      this.empName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.empName.Name = "empName";
+      this.empName.Size = new System.Drawing.Size(157, 32);
+      this.empName.TabIndex = 54;
+      this.empName.Text = "Employee Name:";
+      this.empName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      // 
+      // empId
+      // 
+      this.empId.AutoSize = true;
+      this.empId.BackColor = System.Drawing.Color.White;
+      this.empId.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.empId.ForeColor = System.Drawing.Color.OrangeRed;
+      this.empId.Location = new System.Drawing.Point(118, 102);
+      this.empId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.empId.Name = "empId";
+      this.empId.Size = new System.Drawing.Size(126, 32);
+      this.empId.TabIndex = 55;
+      this.empId.Text = "Employee ID:";
+      this.empId.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       // 
       // exitButtonLabel
       // 
@@ -433,12 +435,42 @@
       this.exitButtonLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       this.exitButtonLabel.Click += new System.EventHandler(this.exitButtonLabel_Click);
       // 
+      // label3
+      // 
+      this.label3.AutoSize = true;
+      this.label3.BackColor = System.Drawing.Color.OrangeRed;
+      this.label3.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold);
+      this.label3.ForeColor = System.Drawing.Color.White;
+      this.label3.Location = new System.Drawing.Point(820, 537);
+      this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.label3.Name = "label3";
+      this.label3.Size = new System.Drawing.Size(176, 29);
+      this.label3.TabIndex = 35;
+      this.label3.Text = "© SnowFire Soft 2022";
+      this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      // 
+      // label2
+      // 
+      this.label2.AutoSize = true;
+      this.label2.BackColor = System.Drawing.Color.OrangeRed;
+      this.label2.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold);
+      this.label2.ForeColor = System.Drawing.Color.White;
+      this.label2.Location = new System.Drawing.Point(516, 537);
+      this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.label2.Name = "label2";
+      this.label2.Size = new System.Drawing.Size(279, 29);
+      this.label2.TabIndex = 34;
+      this.label2.Text = "Developed by: Sabbir Ahmad Ratul";
+      this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      // 
       // ViewEmployee
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.Color.OrangeRed;
       this.ClientSize = new System.Drawing.Size(1000, 575);
+      this.Controls.Add(this.label3);
+      this.Controls.Add(this.label2);
       this.Controls.Add(this.exitButtonLabel);
       this.Controls.Add(this.panel1);
       this.Controls.Add(this.exitButton);
@@ -486,5 +518,7 @@
     private System.Windows.Forms.Label showEmpGender;
     private System.Windows.Forms.Label showEmpName;
     private System.Windows.Forms.Label exitButtonLabel;
+    private System.Windows.Forms.Label label3;
+    private System.Windows.Forms.Label label2;
   }
 }

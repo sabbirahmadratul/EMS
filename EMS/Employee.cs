@@ -22,7 +22,7 @@ namespace EMS
 
     private void addButton_Click(object sender, EventArgs e)
     {
-      if(empIdTextBox.Text == "" || empNameTextBox.Text == "" || empAddressTextBox.Text == "" || empPhoneTextBox.Text == "")
+      if(empNameTextBox.Text == "" || empIdTextBox.Text == "" || empAddressTextBox.Text == "" || empPhoneTextBox.Text == "")
       {
         MessageBox.Show("Missing Information.");
       }
@@ -31,7 +31,7 @@ namespace EMS
         try
         {
           Con.Open();
-          string query = "insert into EmployeeTable values('" + empIdTextBox.Text + "', '" + empNameTextBox.Text + "', '" + empAddressTextBox.Text + "', '" + empPosComboBox.SelectedItem.ToString() + "', '" + empDOBPicker.Value.ToShortDateString() + "', '" + empPhoneTextBox.Text + "', '" + empEduComboBox.SelectedItem.ToString() + "', '" + empGenComboBox.SelectedItem.ToString() + "');";
+          string query = "insert into EmployeeTable values('" + empNameTextBox.Text + "', '" + empIdTextBox.Text + "', '" + empAddressTextBox.Text + "', '" + empPosComboBox.SelectedItem.ToString() + "', '" + empDOBPicker.Value.ToShortDateString() + "', '" + empPhoneTextBox.Text + "', '" + empEduComboBox.SelectedItem.ToString() + "', '" + empGenComboBox.SelectedItem.ToString() + "');";
 
           SqlCommand cmd = new SqlCommand(query, Con);
           cmd.ExecuteNonQuery();
@@ -73,7 +73,7 @@ namespace EMS
 
     private void deleteButton_Click(object sender, EventArgs e)
     {
-      if (empIdTextBox.Text == "")
+      if (empNameTextBox.Text == "")
       {
         MessageBox.Show("Please Enter Employee ID.");
       }
@@ -82,7 +82,7 @@ namespace EMS
         try
         {
           Con.Open();
-          string query = "delete from EmployeeTable where empId = '" + empIdTextBox.Text + "';";
+          string query = "delete from EmployeeTable where empId = '" + empNameTextBox.Text + "';";
 
           SqlCommand cmd = new SqlCommand(query, Con);
           cmd.ExecuteNonQuery();
@@ -90,7 +90,7 @@ namespace EMS
 
           Con.Close();
           populate();
-          empIdTextBox.Text = "";
+          empNameTextBox.Text = "";
 
         }
         catch (Exception ex)
@@ -103,8 +103,8 @@ namespace EMS
 
     private void empDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
     {
-      empIdTextBox.Text = empDGV.SelectedRows[0].Cells[0].Value.ToString();
-      empNameTextBox.Text = empDGV.SelectedRows[0].Cells[1].Value.ToString();
+      empNameTextBox.Text = empDGV.SelectedRows[0].Cells[0].Value.ToString();
+      empIdTextBox.Text = empDGV.SelectedRows[0].Cells[1].Value.ToString();
       empAddressTextBox.Text = empDGV.SelectedRows[0].Cells[2].Value.ToString();
       empPosComboBox.SelectedItem = empDGV.SelectedRows[0].Cells[3].Value.ToString();
       empPhoneTextBox.Text = empDGV.SelectedRows[0].Cells[5].Value.ToString();
@@ -120,7 +120,7 @@ namespace EMS
 
     private void editButton_Click(object sender, EventArgs e)
     {
-      if (empNameTextBox.Text == "" || empAddressTextBox.Text == "" || empPhoneTextBox.Text == "")
+      if (empIdTextBox.Text == "" || empAddressTextBox.Text == "" || empPhoneTextBox.Text == "")
       {
         MessageBox.Show("Missing Information.");
       }
@@ -129,7 +129,7 @@ namespace EMS
         try
         {
           Con.Open();
-          string query = "update EmployeeTable set empName='" + empNameTextBox.Text + "', empAdd='" + empAddressTextBox.Text + "', empPos='" + empPosComboBox.SelectedItem.ToString() + "', empDOB='" + empDOBPicker.Value.ToShortDateString() + "', empPhone='" + empPhoneTextBox.Text + "', empEdu='" + empEduComboBox.SelectedItem.ToString() + "', empGen='" + empGenComboBox.SelectedItem.ToString() + "' where empId='" + empIdTextBox.Text + "';";
+          string query = "update EmployeeTable set empName='" + empIdTextBox.Text + "', empAdd='" + empAddressTextBox.Text + "', empPos='" + empPosComboBox.SelectedItem.ToString() + "', empDOB='" + empDOBPicker.Value.ToShortDateString() + "', empPhone='" + empPhoneTextBox.Text + "', empEdu='" + empEduComboBox.SelectedItem.ToString() + "', empGen='" + empGenComboBox.SelectedItem.ToString() + "' where empId='" + empNameTextBox.Text + "';";
 
           SqlCommand cmd = new SqlCommand(query, Con);
           cmd.ExecuteNonQuery();

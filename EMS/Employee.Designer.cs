@@ -53,11 +53,13 @@
       this.empAddress = new System.Windows.Forms.Label();
       this.empAddressTextBox = new Guna.UI2.WinForms.Guna2TextBox();
       this.empName = new System.Windows.Forms.Label();
-      this.empNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-      this.empId = new System.Windows.Forms.Label();
       this.empIdTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+      this.empId = new System.Windows.Forms.Label();
+      this.empNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
       this.pictureBox1 = new System.Windows.Forms.PictureBox();
       this.exitButton = new System.Windows.Forms.Label();
+      this.label2 = new System.Windows.Forms.Label();
+      this.label3 = new System.Windows.Forms.Label();
       this.panel1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.empDGV)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -98,9 +100,9 @@
       this.panel1.Controls.Add(this.empAddress);
       this.panel1.Controls.Add(this.empAddressTextBox);
       this.panel1.Controls.Add(this.empName);
-      this.panel1.Controls.Add(this.empNameTextBox);
-      this.panel1.Controls.Add(this.empId);
       this.panel1.Controls.Add(this.empIdTextBox);
+      this.panel1.Controls.Add(this.empId);
+      this.panel1.Controls.Add(this.empNameTextBox);
       this.panel1.ForeColor = System.Drawing.Color.White;
       this.panel1.Location = new System.Drawing.Point(1, 74);
       this.panel1.Name = "panel1";
@@ -252,7 +254,7 @@
             "MCom"});
       this.empEduComboBox.Location = new System.Drawing.Point(211, 273);
       this.empEduComboBox.Name = "empEduComboBox";
-      this.empEduComboBox.Size = new System.Drawing.Size(181, 38);
+      this.empEduComboBox.Size = new System.Drawing.Size(187, 38);
       this.empEduComboBox.TabIndex = 20;
       // 
       // empPosComboBox
@@ -262,6 +264,7 @@
       this.empPosComboBox.FormattingEnabled = true;
       this.empPosComboBox.Items.AddRange(new object[] {
             "Administrator",
+            "Manager",
             "Senior Developer",
             "Junior Developer",
             "Receiptionist"});
@@ -331,7 +334,7 @@
       this.empPhoneTextBox.PlaceholderText = "";
       this.empPhoneTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
       this.empPhoneTextBox.SelectedText = "";
-      this.empPhoneTextBox.Size = new System.Drawing.Size(144, 38);
+      this.empPhoneTextBox.Size = new System.Drawing.Size(157, 38);
       this.empPhoneTextBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
       this.empPhoneTextBox.TabIndex = 15;
       // 
@@ -429,29 +432,29 @@
       this.empName.Text = "Employee Name";
       this.empName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       // 
-      // empNameTextBox
+      // empIdTextBox
       // 
-      this.empNameTextBox.BackColor = System.Drawing.Color.Snow;
-      this.empNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-      this.empNameTextBox.DefaultText = "";
-      this.empNameTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-      this.empNameTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-      this.empNameTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-      this.empNameTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-      this.empNameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-      this.empNameTextBox.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold);
-      this.empNameTextBox.ForeColor = System.Drawing.Color.Black;
-      this.empNameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-      this.empNameTextBox.Location = new System.Drawing.Point(211, 55);
-      this.empNameTextBox.Margin = new System.Windows.Forms.Padding(4);
-      this.empNameTextBox.Name = "empNameTextBox";
-      this.empNameTextBox.PasswordChar = '\0';
-      this.empNameTextBox.PlaceholderText = "";
-      this.empNameTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-      this.empNameTextBox.SelectedText = "";
-      this.empNameTextBox.Size = new System.Drawing.Size(181, 38);
-      this.empNameTextBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-      this.empNameTextBox.TabIndex = 4;
+      this.empIdTextBox.BackColor = System.Drawing.Color.Snow;
+      this.empIdTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+      this.empIdTextBox.DefaultText = "";
+      this.empIdTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+      this.empIdTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+      this.empIdTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+      this.empIdTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+      this.empIdTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+      this.empIdTextBox.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold);
+      this.empIdTextBox.ForeColor = System.Drawing.Color.Black;
+      this.empIdTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+      this.empIdTextBox.Location = new System.Drawing.Point(27, 62);
+      this.empIdTextBox.Margin = new System.Windows.Forms.Padding(4);
+      this.empIdTextBox.Name = "empIdTextBox";
+      this.empIdTextBox.PasswordChar = '\0';
+      this.empIdTextBox.PlaceholderText = "";
+      this.empIdTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+      this.empIdTextBox.SelectedText = "";
+      this.empIdTextBox.Size = new System.Drawing.Size(141, 38);
+      this.empIdTextBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+      this.empIdTextBox.TabIndex = 4;
       // 
       // empId
       // 
@@ -467,29 +470,29 @@
       this.empId.Text = "Employee ID";
       this.empId.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       // 
-      // empIdTextBox
+      // empNameTextBox
       // 
-      this.empIdTextBox.BackColor = System.Drawing.Color.Snow;
-      this.empIdTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-      this.empIdTextBox.DefaultText = "";
-      this.empIdTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-      this.empIdTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-      this.empIdTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-      this.empIdTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-      this.empIdTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-      this.empIdTextBox.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold);
-      this.empIdTextBox.ForeColor = System.Drawing.Color.Black;
-      this.empIdTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-      this.empIdTextBox.Location = new System.Drawing.Point(24, 56);
-      this.empIdTextBox.Margin = new System.Windows.Forms.Padding(4);
-      this.empIdTextBox.Name = "empIdTextBox";
-      this.empIdTextBox.PasswordChar = '\0';
-      this.empIdTextBox.PlaceholderText = "";
-      this.empIdTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-      this.empIdTextBox.SelectedText = "";
-      this.empIdTextBox.Size = new System.Drawing.Size(157, 38);
-      this.empIdTextBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-      this.empIdTextBox.TabIndex = 4;
+      this.empNameTextBox.BackColor = System.Drawing.Color.Snow;
+      this.empNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+      this.empNameTextBox.DefaultText = "";
+      this.empNameTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+      this.empNameTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+      this.empNameTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+      this.empNameTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+      this.empNameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+      this.empNameTextBox.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold);
+      this.empNameTextBox.ForeColor = System.Drawing.Color.Black;
+      this.empNameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+      this.empNameTextBox.Location = new System.Drawing.Point(211, 62);
+      this.empNameTextBox.Margin = new System.Windows.Forms.Padding(4);
+      this.empNameTextBox.Name = "empNameTextBox";
+      this.empNameTextBox.PasswordChar = '\0';
+      this.empNameTextBox.PlaceholderText = "";
+      this.empNameTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+      this.empNameTextBox.SelectedText = "";
+      this.empNameTextBox.Size = new System.Drawing.Size(187, 38);
+      this.empNameTextBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+      this.empNameTextBox.TabIndex = 4;
       // 
       // pictureBox1
       // 
@@ -516,12 +519,42 @@
       this.exitButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
       // 
+      // label2
+      // 
+      this.label2.AutoSize = true;
+      this.label2.BackColor = System.Drawing.Color.OrangeRed;
+      this.label2.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold);
+      this.label2.ForeColor = System.Drawing.Color.White;
+      this.label2.Location = new System.Drawing.Point(727, 537);
+      this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.label2.Name = "label2";
+      this.label2.Size = new System.Drawing.Size(279, 29);
+      this.label2.TabIndex = 29;
+      this.label2.Text = "Developed by: Sabbir Ahmad Ratul";
+      this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      // 
+      // label3
+      // 
+      this.label3.AutoSize = true;
+      this.label3.BackColor = System.Drawing.Color.OrangeRed;
+      this.label3.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold);
+      this.label3.ForeColor = System.Drawing.Color.White;
+      this.label3.Location = new System.Drawing.Point(1031, 537);
+      this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.label3.Name = "label3";
+      this.label3.Size = new System.Drawing.Size(176, 29);
+      this.label3.TabIndex = 30;
+      this.label3.Text = "© SnowFire Soft 2022";
+      this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      // 
       // Employee
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.Color.OrangeRed;
       this.ClientSize = new System.Drawing.Size(1210, 575);
+      this.Controls.Add(this.label3);
+      this.Controls.Add(this.label2);
       this.Controls.Add(this.exitButton);
       this.Controls.Add(this.pictureBox1);
       this.Controls.Add(this.panel1);
@@ -547,7 +580,7 @@
 
     private System.Windows.Forms.Label label1;
     private System.Windows.Forms.Panel panel1;
-    private Guna.UI2.WinForms.Guna2TextBox empIdTextBox;
+    private Guna.UI2.WinForms.Guna2TextBox empNameTextBox;
     private System.Windows.Forms.Button homeButton;
     private System.Windows.Forms.Button deleteButton;
     private System.Windows.Forms.Button editButton;
@@ -564,11 +597,13 @@
     private System.Windows.Forms.Label empAddress;
     private Guna.UI2.WinForms.Guna2TextBox empAddressTextBox;
     private System.Windows.Forms.Label empName;
-    private Guna.UI2.WinForms.Guna2TextBox empNameTextBox;
+    private Guna.UI2.WinForms.Guna2TextBox empIdTextBox;
     private System.Windows.Forms.Label empId;
     private System.Windows.Forms.DateTimePicker empDOBPicker;
     private System.Windows.Forms.PictureBox pictureBox1;
     private Guna.UI2.WinForms.Guna2DataGridView empDGV;
     private System.Windows.Forms.Label exitButton;
+    private System.Windows.Forms.Label label3;
+    private System.Windows.Forms.Label label2;
   }
 }

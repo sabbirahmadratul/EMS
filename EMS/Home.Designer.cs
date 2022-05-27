@@ -41,6 +41,8 @@
       this.label1 = new System.Windows.Forms.Label();
       this.logoutPictureBox = new System.Windows.Forms.PictureBox();
       this.logoutButton = new System.Windows.Forms.Label();
+      this.label3 = new System.Windows.Forms.Label();
+      this.label4 = new System.Windows.Forms.Label();
       this.panel1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.salPictureBox)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.ViewPictureBox)).BeginInit();
@@ -197,7 +199,7 @@
       this.logoutButton.BackColor = System.Drawing.Color.OrangeRed;
       this.logoutButton.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.logoutButton.ForeColor = System.Drawing.Color.White;
-      this.logoutButton.Location = new System.Drawing.Point(701, 31);
+      this.logoutButton.Location = new System.Drawing.Point(701, 36);
       this.logoutButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.logoutButton.Name = "logoutButton";
       this.logoutButton.Size = new System.Drawing.Size(100, 43);
@@ -206,12 +208,42 @@
       this.logoutButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
       // 
+      // label3
+      // 
+      this.label3.AutoSize = true;
+      this.label3.BackColor = System.Drawing.Color.OrangeRed;
+      this.label3.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold);
+      this.label3.ForeColor = System.Drawing.Color.White;
+      this.label3.Location = new System.Drawing.Point(625, 412);
+      this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.label3.Name = "label3";
+      this.label3.Size = new System.Drawing.Size(176, 29);
+      this.label3.TabIndex = 32;
+      this.label3.Text = "© SnowFire Soft 2022";
+      this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      // 
+      // label4
+      // 
+      this.label4.AutoSize = true;
+      this.label4.BackColor = System.Drawing.Color.OrangeRed;
+      this.label4.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold);
+      this.label4.ForeColor = System.Drawing.Color.White;
+      this.label4.Location = new System.Drawing.Point(321, 412);
+      this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.label4.Name = "label4";
+      this.label4.Size = new System.Drawing.Size(279, 29);
+      this.label4.TabIndex = 31;
+      this.label4.Text = "Developed by: Sabbir Ahmad Ratul";
+      this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      // 
       // Home
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.Color.OrangeRed;
       this.ClientSize = new System.Drawing.Size(800, 450);
+      this.Controls.Add(this.label3);
+      this.Controls.Add(this.label4);
       this.Controls.Add(this.logoutButton);
       this.Controls.Add(this.logoutPictureBox);
       this.Controls.Add(this.label1);
@@ -247,5 +279,7 @@
     private System.Windows.Forms.Label empLabel;
     private System.Windows.Forms.PictureBox logoutPictureBox;
     private System.Windows.Forms.Label logoutButton;
+    private System.Windows.Forms.Label label3;
+    private System.Windows.Forms.Label label4;
   }
 }

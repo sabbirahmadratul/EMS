@@ -18,12 +18,15 @@ namespace EMS
       InitializeComponent();
     }
 
+    string ID;
+
     SqlConnection Con = new SqlConnection(@"Data Source=LENOVO-G5080\SQLEXPRESS;Integrated Security=True");
     private void fetchEmpData()
     {
       if(empIdTextBox.Text == "")
       {
         MessageBox.Show("Please Enter Employee ID.");
+        empIdTextBox.Text = "";
       }
       else
       {
@@ -48,7 +51,33 @@ namespace EMS
 
     private void fetchButton_Click(object sender, EventArgs e)
     {
-      fetchEmpData();
+      Con.Open();
+      string query = "select * from EmployeeTable where empId='" + empIdTextBox.Text + "';";
+
+      SqlCommand cmd = new SqlCommand(query, Con);
+      DataTable dt = new DataTable();
+
+      SqlDataAdapter sda = new SqlDataAdapter(cmd);
+      sda.Fill(dt);
+
+      foreach (DataRow dr in dt.Rows)
+      {
+        ID = dr["empId"].ToString();
+      }
+
+      Con.Close();
+
+      if(ID==empIdTextBox.Text)
+      {
+        fetchEmpData();
+      }
+      else
+      {
+        MessageBox.Show("Please Enter A Correct Employee ID.");
+        empIdTextBox.Text = "";
+        empNameTextBox.Text = "";
+        empPosTextBox.Text = "";
+      }
     }
 
     private void exitButton_Click(object sender, EventArgs e)
@@ -79,29 +108,29 @@ namespace EMS
       {
         if (empPosTextBox.Text == "Administrator")
         {
-          Dailybase = 300;
+          Dailybase = 100;
         }
         else if (empPosTextBox.Text == "Manager")
         {
-          Dailybase = 250;
+          Dailybase = 80;
         }
         else if (empPosTextBox.Text == "Senior Developer")
         {
-          Dailybase = 230;
+          Dailybase = 60;
         }
         else if (empPosTextBox.Text == "Junior Developer")
         {
-          Dailybase = 200;
+          Dailybase = 50;
         }
         else if (empPosTextBox.Text == "Receiptionist")
         {
-          Dailybase = 150;
+          Dailybase = 20;
         }
 
         Total = Dailybase * Convert.ToInt32(wDaysTextBox.Text);
 
-        empIdTb.Text = empIdTextBox.Text;
-        empNameTb.Text = empNameTextBox.Text;
+        empIdTb.Text = empNameTextBox.Text;
+        empNameTb.Text = empIdTextBox.Text;
         empPosTb.Text = empPosTextBox.Text;
         workDaysTb.Text = wDaysTextBox.Text;
         dailySalaryTb.Text = "$" + Dailybase.ToString();
