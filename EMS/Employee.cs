@@ -31,7 +31,7 @@ namespace EMS
         try
         {
           Con.Open();
-          string query = "insert into EmployeeTable values('" + empNameTextBox.Text + "', '" + empIdTextBox.Text + "', '" + empAddressTextBox.Text + "', '" + empPosComboBox.SelectedItem.ToString() + "', '" + empDOBPicker.Value.ToShortDateString() + "', '" + empPhoneTextBox.Text + "', '" + empEduComboBox.SelectedItem.ToString() + "', '" + empGenComboBox.SelectedItem.ToString() + "');";
+          string query = "insert into EmployeeTable values('" + empIdTextBox.Text + "', '" + empNameTextBox.Text + "', '" + empAddressTextBox.Text + "', '" + empPosComboBox.SelectedItem.ToString() + "', '" + empDOBPicker.Value.ToShortDateString() + "', '" + empPhoneTextBox.Text + "', '" + empEduComboBox.SelectedItem.ToString() + "', '" + empGenComboBox.SelectedItem.ToString() + "');";
 
           SqlCommand cmd = new SqlCommand(query, Con);
           cmd.ExecuteNonQuery();
@@ -82,7 +82,7 @@ namespace EMS
         try
         {
           Con.Open();
-          string query = "delete from EmployeeTable where empId = '" + empNameTextBox.Text + "';";
+          string query = "delete from EmployeeTable where empId = '" + empIdTextBox.Text + "';";
 
           SqlCommand cmd = new SqlCommand(query, Con);
           cmd.ExecuteNonQuery();
@@ -103,8 +103,8 @@ namespace EMS
 
     private void empDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
     {
-      empNameTextBox.Text = empDGV.SelectedRows[0].Cells[0].Value.ToString();
-      empIdTextBox.Text = empDGV.SelectedRows[0].Cells[1].Value.ToString();
+      empNameTextBox.Text = empDGV.SelectedRows[0].Cells[1].Value.ToString();
+      empIdTextBox.Text = empDGV.SelectedRows[0].Cells[0].Value.ToString();
       empAddressTextBox.Text = empDGV.SelectedRows[0].Cells[2].Value.ToString();
       empPosComboBox.SelectedItem = empDGV.SelectedRows[0].Cells[3].Value.ToString();
       empPhoneTextBox.Text = empDGV.SelectedRows[0].Cells[5].Value.ToString();
@@ -129,7 +129,7 @@ namespace EMS
         try
         {
           Con.Open();
-          string query = "update EmployeeTable set empName='" + empIdTextBox.Text + "', empAdd='" + empAddressTextBox.Text + "', empPos='" + empPosComboBox.SelectedItem.ToString() + "', empDOB='" + empDOBPicker.Value.ToShortDateString() + "', empPhone='" + empPhoneTextBox.Text + "', empEdu='" + empEduComboBox.SelectedItem.ToString() + "', empGen='" + empGenComboBox.SelectedItem.ToString() + "' where empId='" + empNameTextBox.Text + "';";
+          string query = "update EmployeeTable set empName='" + empNameTextBox.Text + "', empAdd='" + empAddressTextBox.Text + "', empPos='" + empPosComboBox.SelectedItem.ToString() + "', empDOB='" + empDOBPicker.Value.ToShortDateString() + "', empPhone='" + empPhoneTextBox.Text + "', empEdu='" + empEduComboBox.SelectedItem.ToString() + "', empGen='" + empGenComboBox.SelectedItem.ToString() + "' where empId='" + empIdTextBox.Text + "';";
 
           SqlCommand cmd = new SqlCommand(query, Con);
           cmd.ExecuteNonQuery();
