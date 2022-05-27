@@ -28,13 +28,14 @@
     /// </summary>
     private void InitializeComponent()
     {
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employee));
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
       this.label1 = new System.Windows.Forms.Label();
       this.panel1 = new System.Windows.Forms.Panel();
+      this.empDGV = new Guna.UI2.WinForms.Guna2DataGridView();
       this.empDOBPicker = new System.Windows.Forms.DateTimePicker();
       this.homeButton = new System.Windows.Forms.Button();
       this.deleteButton = new System.Windows.Forms.Button();
@@ -56,11 +57,10 @@
       this.empId = new System.Windows.Forms.Label();
       this.empIdTextBox = new Guna.UI2.WinForms.Guna2TextBox();
       this.pictureBox1 = new System.Windows.Forms.PictureBox();
-      this.label2 = new System.Windows.Forms.Label();
-      this.empDGV = new Guna.UI2.WinForms.Guna2DataGridView();
+      this.exitButton = new System.Windows.Forms.Label();
       this.panel1.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.empDGV)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
       this.SuspendLayout();
       // 
       // label1
@@ -69,7 +69,7 @@
       this.label1.BackColor = System.Drawing.Color.OrangeRed;
       this.label1.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label1.ForeColor = System.Drawing.Color.White;
-      this.label1.Location = new System.Drawing.Point(58, 33);
+      this.label1.Location = new System.Drawing.Point(59, 22);
       this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.label1.Name = "label1";
       this.label1.Size = new System.Drawing.Size(229, 43);
@@ -107,6 +107,77 @@
       this.panel1.Size = new System.Drawing.Size(1206, 438);
       this.panel1.TabIndex = 4;
       // 
+      // empDGV
+      // 
+      this.empDGV.AllowUserToResizeRows = false;
+      dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+      dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+      dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.OrangeRed;
+      dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+      this.empDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+      this.empDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+      this.empDGV.BackgroundColor = System.Drawing.Color.White;
+      this.empDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+      this.empDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+      this.empDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+      dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+      dataGridViewCellStyle6.BackColor = System.Drawing.Color.OrangeRed;
+      dataGridViewCellStyle6.Font = new System.Drawing.Font("Perpetua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+      dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.OrangeRed;
+      dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+      dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+      this.empDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+      this.empDGV.ColumnHeadersHeight = 25;
+      dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+      dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+      dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+      dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+      dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.OrangeRed;
+      dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+      dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+      this.empDGV.DefaultCellStyle = dataGridViewCellStyle7;
+      this.empDGV.EnableHeadersVisualStyles = false;
+      this.empDGV.GridColor = System.Drawing.Color.White;
+      this.empDGV.Location = new System.Drawing.Point(416, 28);
+      this.empDGV.Name = "empDGV";
+      this.empDGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+      dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+      dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+      dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+      dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
+      dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+      dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+      this.empDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+      this.empDGV.RowHeadersVisible = false;
+      this.empDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+      this.empDGV.Size = new System.Drawing.Size(752, 392);
+      this.empDGV.TabIndex = 26;
+      this.empDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+      this.empDGV.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.empDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
+      this.empDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.OrangeRed;
+      this.empDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.White;
+      this.empDGV.ThemeStyle.BackColor = System.Drawing.Color.White;
+      this.empDGV.ThemeStyle.GridColor = System.Drawing.Color.White;
+      this.empDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.OrangeRed;
+      this.empDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+      this.empDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Perpetua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.empDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+      this.empDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+      this.empDGV.ThemeStyle.HeaderStyle.Height = 25;
+      this.empDGV.ThemeStyle.ReadOnly = false;
+      this.empDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+      this.empDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+      this.empDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+      this.empDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+      this.empDGV.ThemeStyle.RowsStyle.Height = 22;
+      this.empDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.OrangeRed;
+      this.empDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+      this.empDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.empDGV_CellContentClick);
+      // 
       // empDOBPicker
       // 
       this.empDOBPicker.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold);
@@ -126,6 +197,7 @@
       this.homeButton.TabIndex = 24;
       this.homeButton.Text = "Home";
       this.homeButton.UseVisualStyleBackColor = false;
+      this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
       // 
       // deleteButton
       // 
@@ -149,6 +221,7 @@
       this.editButton.TabIndex = 22;
       this.editButton.Text = "Edit";
       this.editButton.UseVisualStyleBackColor = false;
+      this.editButton.Click += new System.EventHandler(this.editButton_Click);
       // 
       // addButton
       // 
@@ -428,112 +501,43 @@
       this.pictureBox1.TabIndex = 26;
       this.pictureBox1.TabStop = false;
       // 
-      // label2
+      // exitButton
       // 
-      this.label2.AutoSize = true;
-      this.label2.BackColor = System.Drawing.Color.OrangeRed;
-      this.label2.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label2.ForeColor = System.Drawing.Color.White;
-      this.label2.Location = new System.Drawing.Point(1159, 9);
-      this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-      this.label2.Name = "label2";
-      this.label2.Size = new System.Drawing.Size(35, 43);
-      this.label2.TabIndex = 27;
-      this.label2.Text = "X";
-      this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-      this.label2.Click += new System.EventHandler(this.label2_Click);
-      // 
-      // empDGV
-      // 
-      this.empDGV.AllowUserToResizeRows = false;
-      dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-      dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
-      dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.OrangeRed;
-      dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
-      this.empDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
-      this.empDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-      this.empDGV.BackgroundColor = System.Drawing.Color.White;
-      this.empDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-      this.empDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-      this.empDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-      dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-      dataGridViewCellStyle10.BackColor = System.Drawing.Color.OrangeRed;
-      dataGridViewCellStyle10.Font = new System.Drawing.Font("Perpetua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-      dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.OrangeRed;
-      dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-      dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-      this.empDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
-      this.empDGV.ColumnHeadersHeight = 25;
-      dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-      dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-      dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-      dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-      dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.OrangeRed;
-      dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
-      dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-      this.empDGV.DefaultCellStyle = dataGridViewCellStyle11;
-      this.empDGV.EnableHeadersVisualStyles = false;
-      this.empDGV.GridColor = System.Drawing.Color.White;
-      this.empDGV.Location = new System.Drawing.Point(416, 28);
-      this.empDGV.Name = "empDGV";
-      this.empDGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-      dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-      dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-      dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-      dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.White;
-      dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-      dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-      this.empDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
-      this.empDGV.RowHeadersVisible = false;
-      this.empDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-      this.empDGV.Size = new System.Drawing.Size(752, 392);
-      this.empDGV.TabIndex = 26;
-      this.empDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-      this.empDGV.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.empDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
-      this.empDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.OrangeRed;
-      this.empDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.White;
-      this.empDGV.ThemeStyle.BackColor = System.Drawing.Color.White;
-      this.empDGV.ThemeStyle.GridColor = System.Drawing.Color.White;
-      this.empDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.OrangeRed;
-      this.empDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-      this.empDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Perpetua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.empDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-      this.empDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-      this.empDGV.ThemeStyle.HeaderStyle.Height = 25;
-      this.empDGV.ThemeStyle.ReadOnly = false;
-      this.empDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-      this.empDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-      this.empDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-      this.empDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-      this.empDGV.ThemeStyle.RowsStyle.Height = 22;
-      this.empDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.OrangeRed;
-      this.empDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
-      this.empDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.empDGV_CellContentClick);
+      this.exitButton.AutoSize = true;
+      this.exitButton.BackColor = System.Drawing.Color.OrangeRed;
+      this.exitButton.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.exitButton.ForeColor = System.Drawing.Color.White;
+      this.exitButton.Location = new System.Drawing.Point(1159, 9);
+      this.exitButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.exitButton.Name = "exitButton";
+      this.exitButton.Size = new System.Drawing.Size(35, 43);
+      this.exitButton.TabIndex = 28;
+      this.exitButton.Text = "X";
+      this.exitButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
       // 
       // Employee
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.Color.OrangeRed;
-      this.ClientSize = new System.Drawing.Size(1207, 574);
-      this.Controls.Add(this.label2);
+      this.ClientSize = new System.Drawing.Size(1210, 575);
+      this.Controls.Add(this.exitButton);
       this.Controls.Add(this.pictureBox1);
       this.Controls.Add(this.panel1);
       this.Controls.Add(this.label1);
       this.ForeColor = System.Drawing.Color.White;
       this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+      this.MaximumSize = new System.Drawing.Size(1210, 575);
+      this.MinimumSize = new System.Drawing.Size(1210, 575);
       this.Name = "Employee";
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
       this.Text = "Employee";
       this.Load += new System.EventHandler(this.Employee_Load);
       this.panel1.ResumeLayout(false);
       this.panel1.PerformLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.empDGV)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
       this.ResumeLayout(false);
       this.PerformLayout();
 
@@ -564,7 +568,7 @@
     private System.Windows.Forms.Label empId;
     private System.Windows.Forms.DateTimePicker empDOBPicker;
     private System.Windows.Forms.PictureBox pictureBox1;
-    private System.Windows.Forms.Label label2;
     private Guna.UI2.WinForms.Guna2DataGridView empDGV;
+    private System.Windows.Forms.Label exitButton;
   }
 }

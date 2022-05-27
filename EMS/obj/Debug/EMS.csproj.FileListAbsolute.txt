@@ -46,3 +46,4 @@ C:\Users\SAR-L\source\repos\EMS\EMS\obj\Debug\EMS.csproj.Fody.CopyLocal.cache
 C:\Users\SAR-L\source\repos\EMS\EMS\obj\Debug\EMS.csproj.CopyComplete
 C:\Users\SAR-L\source\repos\EMS\EMS\obj\Debug\EMS.exe
 C:\Users\SAR-L\source\repos\EMS\EMS\obj\Debug\EMS.pdb
+C:\Users\SAR-L\source\repos\EMS\EMS\obj\Debug\EMS.ViewEmployee.resources

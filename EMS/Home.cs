@@ -16,5 +16,47 @@ namespace EMS
     {
       InitializeComponent();
     }
+
+    private void empLabel_Click(object sender, EventArgs e)
+    {
+      Employee emp = new Employee();
+      emp.Show();
+      this.Hide();
+    }
+
+    private void empPictureBox_Click(object sender, EventArgs e)
+    {
+      Employee emp = new Employee();
+      emp.Show();
+      this.Hide();
+    }
+
+    private void logoutPictureBox_Click(object sender, EventArgs e)
+    {
+      Login login = new Login();
+      login.Show();
+      this.Hide();
+    }
+
+    private void logoutButton_Click(object sender, EventArgs e)
+    {
+      Login login = new Login();
+      login.Show();
+      this.Hide();
+    }
+
+    private void ViewPictureBox_Click(object sender, EventArgs e)
+    {
+      ViewEmployee viewEmployee = new ViewEmployee();
+      viewEmployee.Show();
+      this.Hide();
+    }
+
+    private void viewLabel_Click(object sender, EventArgs e)
+    {
+      ViewEmployee viewEmployee = new ViewEmployee();
+      viewEmployee.Show();
+      this.Hide();
+    }
   }
 }
