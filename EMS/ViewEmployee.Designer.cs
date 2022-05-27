@@ -41,7 +41,7 @@
       this.empDOB = new System.Windows.Forms.Label();
       this.empPhone = new System.Windows.Forms.Label();
       this.empEdu = new System.Windows.Forms.Label();
-      this.deleteButton = new System.Windows.Forms.Button();
+      this.printButton = new System.Windows.Forms.Button();
       this.homeButton = new System.Windows.Forms.Button();
       this.showEmpPhone = new System.Windows.Forms.Label();
       this.showEmpPosition = new System.Windows.Forms.Label();
@@ -112,7 +112,7 @@
       this.panel1.Controls.Add(this.showEmpAddress);
       this.panel1.Controls.Add(this.showEmpId);
       this.panel1.Controls.Add(this.homeButton);
-      this.panel1.Controls.Add(this.deleteButton);
+      this.panel1.Controls.Add(this.printButton);
       this.panel1.Controls.Add(this.empEdu);
       this.panel1.Controls.Add(this.empPhone);
       this.panel1.Controls.Add(this.empDOB);
@@ -238,17 +238,17 @@
       this.empEdu.Text = "Education:";
       this.empEdu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       // 
-      // deleteButton
+      // printButton
       // 
-      this.deleteButton.BackColor = System.Drawing.Color.OrangeRed;
-      this.deleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.deleteButton.ForeColor = System.Drawing.Color.White;
-      this.deleteButton.Location = new System.Drawing.Point(356, 346);
-      this.deleteButton.Name = "deleteButton";
-      this.deleteButton.Size = new System.Drawing.Size(83, 43);
-      this.deleteButton.TabIndex = 67;
-      this.deleteButton.Text = "Delete";
-      this.deleteButton.UseVisualStyleBackColor = false;
+      this.printButton.BackColor = System.Drawing.Color.OrangeRed;
+      this.printButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.printButton.ForeColor = System.Drawing.Color.White;
+      this.printButton.Location = new System.Drawing.Point(356, 346);
+      this.printButton.Name = "printButton";
+      this.printButton.Size = new System.Drawing.Size(83, 43);
+      this.printButton.TabIndex = 67;
+      this.printButton.Text = "Print";
+      this.printButton.UseVisualStyleBackColor = false;
       // 
       // homeButton
       // 
@@ -465,7 +465,7 @@
     private System.Windows.Forms.Label viewEmpLabel;
     private System.Windows.Forms.Panel panel1;
     private System.Windows.Forms.Button homeButton;
-    private System.Windows.Forms.Button deleteButton;
+    private System.Windows.Forms.Button printButton;
     private System.Windows.Forms.Label empEdu;
     private System.Windows.Forms.Label empPhone;
     private System.Windows.Forms.Label empDOB;

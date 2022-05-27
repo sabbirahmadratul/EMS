@@ -58,5 +58,19 @@ namespace EMS
       viewEmployee.Show();
       this.Hide();
     }
+
+    private void salPictureBox_Click(object sender, EventArgs e)
+    {
+      Salary salary = new Salary();
+      salary.Show();
+      this.Hide();
+    }
+
+    private void salaryLabel_Click(object sender, EventArgs e)
+    {
+      Salary salary = new Salary();
+      salary.Show();
+      this.Hide();
+    }
   }
 }

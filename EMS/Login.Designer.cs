@@ -35,6 +35,7 @@
       this.passwordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
       this.loginButton = new System.Windows.Forms.Button();
       this.clearButton = new System.Windows.Forms.Button();
+      this.exitButton = new System.Windows.Forms.Label();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
       this.SuspendLayout();
       // 
@@ -43,7 +44,7 @@
       this.label1.AutoSize = true;
       this.label1.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label1.ForeColor = System.Drawing.Color.OrangeRed;
-      this.label1.Location = new System.Drawing.Point(361, 9);
+      this.label1.Location = new System.Drawing.Point(13, 9);
       this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.label1.Name = "label1";
       this.label1.Size = new System.Drawing.Size(176, 43);
@@ -55,7 +56,7 @@
       // 
       this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
       this.pictureBox1.Location = new System.Drawing.Point(82, 77);
-      this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+      this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
       this.pictureBox1.Name = "pictureBox1";
       this.pictureBox1.Size = new System.Drawing.Size(116, 104);
       this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -72,10 +73,10 @@
       this.loginTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
       this.loginTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
       this.loginTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-      this.loginTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+      this.loginTextBox.Font = new System.Drawing.Font("Myanmar Text", 11F, System.Drawing.FontStyle.Bold);
       this.loginTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
       this.loginTextBox.Location = new System.Drawing.Point(268, 77);
-      this.loginTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+      this.loginTextBox.Margin = new System.Windows.Forms.Padding(4);
       this.loginTextBox.Name = "loginTextBox";
       this.loginTextBox.PasswordChar = '\0';
       this.loginTextBox.PlaceholderText = "Username";
@@ -95,10 +96,10 @@
       this.passwordTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
       this.passwordTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
       this.passwordTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-      this.passwordTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+      this.passwordTextBox.Font = new System.Drawing.Font("Myanmar Text", 11F, System.Drawing.FontStyle.Bold);
       this.passwordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
       this.passwordTextBox.Location = new System.Drawing.Point(268, 140);
-      this.passwordTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+      this.passwordTextBox.Margin = new System.Windows.Forms.Padding(4);
       this.passwordTextBox.Name = "passwordTextBox";
       this.passwordTextBox.PasswordChar = '\0';
       this.passwordTextBox.PlaceholderText = "Password";
@@ -112,21 +113,22 @@
       // 
       this.loginButton.BackColor = System.Drawing.Color.OrangeRed;
       this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-      this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.loginButton.Font = new System.Drawing.Font("Myanmar Text", 11F, System.Drawing.FontStyle.Bold);
       this.loginButton.ForeColor = System.Drawing.Color.White;
       this.loginButton.Location = new System.Drawing.Point(316, 212);
-      this.loginButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+      this.loginButton.Margin = new System.Windows.Forms.Padding(4);
       this.loginButton.Name = "loginButton";
       this.loginButton.Size = new System.Drawing.Size(109, 37);
       this.loginButton.TabIndex = 5;
       this.loginButton.Text = "Login";
       this.loginButton.UseVisualStyleBackColor = false;
+      this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
       // 
       // clearButton
       // 
       this.clearButton.BackColor = System.Drawing.Color.OrangeRed;
       this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-      this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.clearButton.Font = new System.Drawing.Font("Myanmar Text", 11F, System.Drawing.FontStyle.Bold);
       this.clearButton.ForeColor = System.Drawing.Color.White;
       this.clearButton.Location = new System.Drawing.Point(198, 212);
       this.clearButton.Margin = new System.Windows.Forms.Padding(4);
@@ -135,6 +137,21 @@
       this.clearButton.TabIndex = 6;
       this.clearButton.Text = "Clear";
       this.clearButton.UseVisualStyleBackColor = false;
+      this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+      // 
+      // exitButton
+      // 
+      this.exitButton.AutoSize = true;
+      this.exitButton.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.exitButton.ForeColor = System.Drawing.Color.OrangeRed;
+      this.exitButton.Location = new System.Drawing.Point(502, 9);
+      this.exitButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.exitButton.Name = "exitButton";
+      this.exitButton.Size = new System.Drawing.Size(35, 43);
+      this.exitButton.TabIndex = 7;
+      this.exitButton.Text = "X";
+      this.exitButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+      this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
       // 
       // Login
       // 
@@ -142,6 +159,7 @@
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.Color.White;
       this.ClientSize = new System.Drawing.Size(550, 281);
+      this.Controls.Add(this.exitButton);
       this.Controls.Add(this.clearButton);
       this.Controls.Add(this.loginButton);
       this.Controls.Add(this.passwordTextBox);
@@ -150,7 +168,7 @@
       this.Controls.Add(this.label1);
       this.Font = new System.Drawing.Font("Poor Richard", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-      this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+      this.Margin = new System.Windows.Forms.Padding(4);
       this.MaximumSize = new System.Drawing.Size(550, 281);
       this.MinimumSize = new System.Drawing.Size(550, 281);
       this.Name = "Login";
@@ -170,5 +188,6 @@
     private Guna.UI2.WinForms.Guna2TextBox passwordTextBox;
     private System.Windows.Forms.Button loginButton;
     private System.Windows.Forms.Button clearButton;
+    private System.Windows.Forms.Label exitButton;
   }
 }

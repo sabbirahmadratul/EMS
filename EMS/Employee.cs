@@ -35,7 +35,7 @@ namespace EMS
 
           SqlCommand cmd = new SqlCommand(query, Con);
           cmd.ExecuteNonQuery();
-          MessageBox.Show("Employee added succesfully.");
+          MessageBox.Show("Employee Added Succesfully.");
 
           Con.Close();
           populate();
@@ -75,7 +75,7 @@ namespace EMS
     {
       if (empIdTextBox.Text == "")
       {
-        MessageBox.Show("Please enter Employee ID.");
+        MessageBox.Show("Please Enter Employee ID.");
       }
       else
       {
@@ -86,7 +86,7 @@ namespace EMS
 
           SqlCommand cmd = new SqlCommand(query, Con);
           cmd.ExecuteNonQuery();
-          MessageBox.Show("Employee deleted succesfully.");
+          MessageBox.Show("Record Has Been Deleted Succesfully.");
 
           Con.Close();
           populate();
@@ -133,7 +133,7 @@ namespace EMS
 
           SqlCommand cmd = new SqlCommand(query, Con);
           cmd.ExecuteNonQuery();
-          MessageBox.Show("Employee updated succesfully.");
+          MessageBox.Show("Record Has Been Updated Succesfully.");
 
           Con.Close();
           populate();

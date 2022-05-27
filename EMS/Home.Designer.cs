@@ -61,7 +61,7 @@
       this.panel1.Controls.Add(this.label2);
       this.panel1.Location = new System.Drawing.Point(-1, 110);
       this.panel1.Name = "panel1";
-      this.panel1.Size = new System.Drawing.Size(802, 238);
+      this.panel1.Size = new System.Drawing.Size(802, 273);
       this.panel1.TabIndex = 0;
       // 
       // salaryLabel
@@ -70,23 +70,25 @@
       this.salaryLabel.BackColor = System.Drawing.Color.White;
       this.salaryLabel.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.salaryLabel.ForeColor = System.Drawing.Color.OrangeRed;
-      this.salaryLabel.Location = new System.Drawing.Point(533, 174);
+      this.salaryLabel.Location = new System.Drawing.Point(535, 205);
       this.salaryLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.salaryLabel.Name = "salaryLabel";
       this.salaryLabel.Size = new System.Drawing.Size(66, 32);
       this.salaryLabel.TabIndex = 8;
       this.salaryLabel.Text = "Salary";
       this.salaryLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      this.salaryLabel.Click += new System.EventHandler(this.salaryLabel_Click);
       // 
       // salPictureBox
       // 
       this.salPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("salPictureBox.Image")));
-      this.salPictureBox.Location = new System.Drawing.Point(527, 55);
+      this.salPictureBox.Location = new System.Drawing.Point(527, 74);
       this.salPictureBox.Name = "salPictureBox";
       this.salPictureBox.Size = new System.Drawing.Size(76, 110);
       this.salPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
       this.salPictureBox.TabIndex = 7;
       this.salPictureBox.TabStop = false;
+      this.salPictureBox.Click += new System.EventHandler(this.salPictureBox_Click);
       // 
       // viewLabel
       // 
@@ -94,7 +96,7 @@
       this.viewLabel.BackColor = System.Drawing.Color.White;
       this.viewLabel.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.viewLabel.ForeColor = System.Drawing.Color.OrangeRed;
-      this.viewLabel.Location = new System.Drawing.Point(351, 174);
+      this.viewLabel.Location = new System.Drawing.Point(344, 205);
       this.viewLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.viewLabel.Name = "viewLabel";
       this.viewLabel.Size = new System.Drawing.Size(55, 32);
@@ -106,7 +108,7 @@
       // ViewPictureBox
       // 
       this.ViewPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("ViewPictureBox.Image")));
-      this.ViewPictureBox.Location = new System.Drawing.Point(339, 55);
+      this.ViewPictureBox.Location = new System.Drawing.Point(330, 74);
       this.ViewPictureBox.Name = "ViewPictureBox";
       this.ViewPictureBox.Size = new System.Drawing.Size(76, 110);
       this.ViewPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -120,7 +122,7 @@
       this.empLabel.BackColor = System.Drawing.Color.White;
       this.empLabel.Font = new System.Drawing.Font("Myanmar Text", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.empLabel.ForeColor = System.Drawing.Color.OrangeRed;
-      this.empLabel.Location = new System.Drawing.Point(143, 174);
+      this.empLabel.Location = new System.Drawing.Point(144, 205);
       this.empLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.empLabel.Name = "empLabel";
       this.empLabel.Size = new System.Drawing.Size(97, 32);
@@ -132,7 +134,7 @@
       // empPictureBox
       // 
       this.empPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("empPictureBox.Image")));
-      this.empPictureBox.Location = new System.Drawing.Point(153, 55);
+      this.empPictureBox.Location = new System.Drawing.Point(153, 74);
       this.empPictureBox.Name = "empPictureBox";
       this.empPictureBox.Size = new System.Drawing.Size(76, 110);
       this.empPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -146,7 +148,7 @@
       this.label2.BackColor = System.Drawing.Color.White;
       this.label2.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label2.ForeColor = System.Drawing.Color.OrangeRed;
-      this.label2.Location = new System.Drawing.Point(289, 4);
+      this.label2.Location = new System.Drawing.Point(289, 15);
       this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.label2.Name = "label2";
       this.label2.Size = new System.Drawing.Size(176, 43);
@@ -170,7 +172,7 @@
       this.label1.BackColor = System.Drawing.Color.OrangeRed;
       this.label1.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label1.ForeColor = System.Drawing.Color.White;
-      this.label1.Location = new System.Drawing.Point(82, 44);
+      this.label1.Location = new System.Drawing.Point(82, 37);
       this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.label1.Name = "label1";
       this.label1.Size = new System.Drawing.Size(87, 43);
@@ -181,7 +183,7 @@
       // logoutPictureBox
       // 
       this.logoutPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("logoutPictureBox.Image")));
-      this.logoutPictureBox.Location = new System.Drawing.Point(648, 44);
+      this.logoutPictureBox.Location = new System.Drawing.Point(648, 31);
       this.logoutPictureBox.Name = "logoutPictureBox";
       this.logoutPictureBox.Size = new System.Drawing.Size(46, 42);
       this.logoutPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -195,7 +197,7 @@
       this.logoutButton.BackColor = System.Drawing.Color.OrangeRed;
       this.logoutButton.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.logoutButton.ForeColor = System.Drawing.Color.White;
-      this.logoutButton.Location = new System.Drawing.Point(701, 44);
+      this.logoutButton.Location = new System.Drawing.Point(701, 31);
       this.logoutButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.logoutButton.Name = "logoutButton";
       this.logoutButton.Size = new System.Drawing.Size(100, 43);
